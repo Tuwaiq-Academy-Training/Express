@@ -31,7 +31,7 @@
       npm install express 
 ولأننا نستخدم TypeScript  نقوم ايضا بتثبيت  Types  لـExpress
 
-     npm i @types/express
+     npm i -D @types/express
 
 4 - بداخل ملف app.ts نقوم ببناء السيرفر 
 
@@ -54,13 +54,9 @@
        console.log("Express app listening on port 3000");
      });
 
-8 -  وقبل تشغيل السيرفر نذهب الى package.json ونقوم بتعديل بعض  الاوامر بداخل scripts
+8 -  الآن، يمكنك تشغيل الخادم server عن طريق الأمر التالي
 
-           "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-         "dev":"nodemon src/app.ts",
-        "start":"tsc && node dist/app.js "
-         },
+      ts-node app.ts
          
          
 9 - حاليا نقوم بتشغيل السيرفر عن طريق الامر التالي  
